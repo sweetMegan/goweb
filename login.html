@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="login">
+    <!--template语法 获取Flag属性的值-->
+{{if .Flag}}
+    <div>用户名或密码错误</div>
+{{end}}
+    <form action="/login" method="post">
+        用户名:<input type="text" name="userName" value="" placeholder="请输入用户名"/><br/>
+        密码: <input type="password" name="password" placeholder="请输入密码"/><br/>
+        <div class="btn">
+            <span><input type="submit" value="登录"/></span>
+            <span><input type="reset" value="重置"/></span>
+        </div>
+    </form>
+</div>
+</body>
+</html>

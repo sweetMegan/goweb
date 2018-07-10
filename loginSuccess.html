@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录成功</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>名称</th>
+        <th>密码</th>
+        <th>年龄</th>
+        <th>性别</th>
+    </tr>
+    <!--遍历Persons-->
+{{range .Persons}}
+    <tr>
+        <!--person.Pid-->
+        <td>{{.Pid}}</td>
+        <!--person.Name-->
+        <td>{{.Name}}</td>
+        <td>{{.Password}}</td>
+        <td>{{.Age}}</td>
+        <td>{{.Gender}}</td>
+    </tr>
+{{end}}
+</table>
+</body>
+</html>
